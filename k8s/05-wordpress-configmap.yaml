@@ -1,0 +1,8 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: wordpress-config
+  namespace: wordpress-app
+data:
+  WORDPRESS_DB_HOST: mysql-headless:3306
+  WORDPRESS_DB_NAME: mydb
